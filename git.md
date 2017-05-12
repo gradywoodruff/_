@@ -1,3 +1,5 @@
+![](assets/images/git.gif)
+
 ## Git
 ### Things learned
 * Commit locally often
