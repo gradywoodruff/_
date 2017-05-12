@@ -7,3 +7,4 @@ Tracking and taking notes on things I am learning and then making cheatsheets so
 - [Markdown](https://github.com/gradywoodruff/cheatsheet/blob/master/markdown.md)
 - [Open Source Speech Recognition](https://github.com/gradywoodruff/cheatsheet/blob/master/speech_recognition.md)
 - [Regex](https://github.com/gradywoodruff/cheatsheet/blob/master/regex.md)
+- [Tumblr](https://github.com/gradywoodruff/cheatsheet/blob/master/tumblr.md)
