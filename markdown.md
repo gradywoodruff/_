@@ -28,11 +28,11 @@
 (code also can't be embedded below numbered lists)
 
 	1. Numbered
-	⋅⋅1. Numbered
-	⋅⋅2. Subpoints
+		1. Numbered
+		2. Subpoints
 	2. Lists
-	⋅⋅* Bullet
-	⋅⋅* Subpoints
+		* Bullet
+		* Subpoints
 
 In-line `embeds` can be done
 
