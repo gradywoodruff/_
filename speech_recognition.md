@@ -1,6 +1,6 @@
 ![](assets/images/hal.gif)
 
-## Open Source Speech Recognition
+# Open Source Speech Recognition
 I followed a few different repositories and some youtube videos to build the beginning of a speech recognition program
 
 ### Pocket Sphinx

@@ -1,6 +1,6 @@
 ![](assets/images/git.gif)
 
-## Git
+# Git
 ### Things learned
 * Commit locally often
 * Create new branches for each feature
