@@ -1,5 +1,3 @@
-![](assets/images/tumblr.gif)
-
 # Tumblr Themeing
 Custom Tumblr theme from scratch
 

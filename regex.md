@@ -16,6 +16,10 @@ Searching for patterns
 * parentheses capture groups
 
 ### Examples
+Validate an email address
+
+	/\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+
 Validate a hex
 
 	/^#([a-f\d]{3}){1,2}$/i
@@ -31,6 +35,10 @@ Any number that's NOT divisible by 50
 Anything that doesn't contain "foo"
 
 	/^(?!.*foo).+$/
+
+A YouTube ID
+
+	/(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/ ]{11})/i
 
 ## Quick Reference
 
