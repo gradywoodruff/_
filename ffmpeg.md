@@ -1,6 +1,6 @@
 # FFMPEG
 
-##Show between second 0 and 20
+## Show between second 0 and 20
 
 	ffmpeg -i input.mp4 -i image.png \
 	-filter_complex "[0:v][1:v] overlay=25:25:enable='between(t,0,20)'" \
@@ -20,7 +20,7 @@ The `-acodec copy` / `-c:a copy` that you have in your command f.e. would simply
 If you want to transcode audio, remove the `-c:a copy` part. You may have to explicitly specify an encoder, e.g. `-c:a aac -strict experimental`. See the AAC encoding guide for more info.
 
 
-##Fade out
+## Fade out
 
 	ffmpeg -i in.mp4 -framerate 30000/1001 -loop 1 -i logo.png -filter_complex
 	  "[1:v] fade=out:st=30:d=1:alpha=1 [ov]; [0:v][ov] overlay=10:10 [v]" -map "[v]"
@@ -32,7 +32,7 @@ This will display the logo at x,y position 10,10 for 30 seconds followed by a 1 
 
 The reason for the `-framerate` and `-loop` for a still image is so that the fade out will work. If there is only a single frame then it has no way to fade out over a 1 second interval. Ideally it should be the same frame rate as the video so that the fade will be as smooth as possible.
 
-##Using overlay video filter to add a logo to a video:
+## Using overlay video filter to add a logo to a video:
 
 	ffmpeg -i video.mp4 -i logo.png -filter_complex "[0:v][1:v]overlay" \
 	-codec:a copy out.mp4
@@ -43,7 +43,7 @@ By default the logo will be placed in the upper left.
 
 Using `-codec:a copy` will [stream copy](http://ffmpeg.org/ffmpeg.html#Stream-copy) the audio. This simply re-muxes the audio instead of re-encoding it. Think of it as a "copy and paste" of the audio.
 
-###Moving the logo
+### Moving the logo
 
 This example will move the logo 10 pixels to the right, and 10 pixels down: enter image description here
 
@@ -58,7 +58,7 @@ This example will move the logo 10 pixels from the right side and 10 pixels down
 
 `main_w` refers to the width of the "main" input (the background or `[0:v]`), and `overlay_w` refers to the width of the "overlay" input (the logo or `[1:v]`). So, in the example, this can be translated to `overlay=320-90-10:10` or `overlay=220:10`.
 
-###Timing the overlay
+### Timing the overlay
 
 Some filters can handle [timeline editing](http://ffmpeg.org/ffmpeg-filters.html#Timeline-editing) which allows you to use [arithmetic expressions](http://ffmpeg.org/ffmpeg-utils.html#Expression-Evaluation) to determine when a filter should be applied. Refer to `ffmpeg -filters` to see which filters support timeline editing.
 
