@@ -7,6 +7,37 @@ Use the WordPress `locate_template()` function within PHP’s `include()`, inste
 	include(locate_template('file/path/filename.php'));
 	?>
 
+## Remove empty <p> tags from content
+
+If the wordpress content editor is adding extra `<p></p>` tags, this function will clean it up
+
+	function remove_empty_p( $content ){
+		// clean up p tags around block elements
+		$content = preg_replace( array(
+			'#<p>\s*<(div|aside|section|article|header|footer)#',
+			'#</(div|aside|section|article|header|footer)>\s*</p>#',
+			'#</(div|aside|section|article|header|footer)>\s*<br ?/?>#',
+			'#<(div|aside|section|article|header|footer)(.*?)>\s*</p>#',
+			'#<p>\s*</(div|aside|section|article|header|footer)#',
+		), array(
+			'<$1',
+			'</$1>',
+			'</$1>',
+			'<$1$2>',
+			'</$1',
+		), $content );
+		return preg_replace('#<p>(\s|&nbsp;)*+(<br\s*/*>)?(\s|&nbsp;)*</p>#i', '', $content);
+	}
+
+## Remove Categories and Tags from Menu
+
+To remove categories and tags from the menu option on the admin side bar
+
+	function my_remove_sub_menus() {
+	//	remove_submenu_page('edit.php', 'edit-tags.php?taxonomy=category');
+		remove_submenu_page('edit.php', 'edit-tags.php?taxonomy=post_tag');
+	} add_action('admin_menu', 'my_remove_sub_menus');
+
 ## Human Time Conversion
 
 This examplue uses a hypothetical ACF called "date" (called with `get_field('date')`)
@@ -20,6 +51,23 @@ Three ways to link to a wordpress page based on its name
 	<a href="<?php echo get_permalink( get_page_by_path( 'map' ) ) ?>">Link</a>
 	<a href="<?php echo get_permalink( get_page_by_title( 'Map' ) ) ?>">Link</a>
 	<a href="<?php echo home_url( '/map/' ) ?>">Link</a>
+
+## Text message link for only mobile
+
+Changes the `tel:` link to a text message link when being viewed on mobile
+
+	<a href="<?php if (wp_is_mobile()) { echo 'sms://+1'; } else { echo 'tel:'; } ?>4044774941">4044774941</a>
+
+## Add function to get the_slug
+
+	function the_slug($echo=true){
+		$slug = basename(get_permalink());
+		do_action('before_slug', $slug);
+		$slug = apply_filters('slug_filter', $slug);
+		if( $echo ) echo $slug;
+		do_action('after_slug', $slug);
+		return $slug;
+	}
 
 ## Check for empty Content
 
@@ -245,3 +293,14 @@ Code for the page you want to display the Reverse Query on. Change `posts` in `'
 	    <?php endwhile; ?>
 	    </ul>
 	<?php endif; wp_reset_query(); ?>
+
+## Query by custom fields
+In this example, the field `project__private` is a True/False field. Setting the `value` to 1 and using `compare => !=` displays only the fields that are not true.
+
+	'meta_query' => array(
+		array(
+			'key'	  	=> 'project__private',
+			'value'	  	=> '1',
+			'compare' 	=> '!=',
+		)
+	)
