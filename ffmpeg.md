@@ -67,7 +67,7 @@ This example will show the logo until 30 seconds:
 	ffmpeg -i video.mp4 -i logo.png -filter_complex \
 	"[0:v][1:v]overlay=10:10:enable=between(t\,0\,30)" -codec:a copy out.mp4
 
-### Batch convert video
+### Batch convert
 Run in terminal 
 
 	for i in *.avi; do ffmpeg -i "$i" "${i%.*}.mp4"; done

@@ -47,3 +47,7 @@ Reverting commits
 	git revert -n HEAD~3..HEAD  # prepare a new commit reverting last 3 commits
 	git commit -m 'commit message'
 	git push origin master  # regular push
+
+If there is a caching issue
+
+	git filter-branch -f --index-filter "git rm -rf --cached --ignore-unmatch FOLDERNAME" -- --all
