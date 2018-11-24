@@ -9,6 +9,8 @@ Tracking and taking notes on things I am learning and then making cheatsheets so
 - [Git](https://github.com/gradywoodruff/cheatsheet/blob/master/git.md)
 - [HQ GIF](https://github.com/gradywoodruff/cheatsheet/blob/master/hq_gif.md)
 - [Markdown](https://github.com/gradywoodruff/cheatsheet/blob/master/markdown.md)
+- [Postgres](https://github.com/gradywoodruff/cheatsheet/blob/master/postgres.md)
+- [pyenv](https://github.com/gradywoodruff/cheatsheet/blob/master/pyenv.md)
 - [Python](https://github.com/gradywoodruff/cheatsheet/blob/master/python.md)
 - [Rails](https://github.com/gradywoodruff/cheatsheet/blob/master/rails.md)
 - [Regex](https://github.com/gradywoodruff/cheatsheet/blob/master/regex.md)
