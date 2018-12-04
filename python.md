@@ -1,5 +1,46 @@
 # Python
 
-### Testing Email Energy
+## Virtual environment
 
-	python -m smtpd -n -c DebuggingServer localhost:1025
+### Commands
+
+    pyenv versions
+    pyenv version
+
+### Create New Environment
+
+    pyenv virtualenv #{env name}
+
+### Create new pipenv Environment
+
+    pyenv install 3.6.5
+    pyenv shell 3.6.5
+    pip install pipenv
+    cd /project_path
+    pipenv --python 3.6.5
+
+### Set up pyenv and pipenv
+
+To set up a new python environment, first choose
+which python version you want to use. To check
+python versions:
+
+    pyenv versions
+
+If the python version you want to use is on the list,
+continue, else:
+
+    pyenv install 3.6.0
+
+Now, while in new project directory, install python and
+then pipenv:
+
+    pyenv local 3.7.1
+    pipenv --python 3.7.1
+
+The environment will now run with that python version
+and use pip in the folder's virtual environment
+
+## Testing Email Energy
+
+    python -m smtpd -n -c DebuggingServer localhost:1025

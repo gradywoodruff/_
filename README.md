@@ -1,6 +1,7 @@
 ![](assets/images/404.gif)
 
 # Cheatsheets
+
 Tracking and taking notes on things I am learning and then making cheatsheets so I can outsource some of my memory. Shoutout [@jeffrafter](https://github.com/jeffrafter/howto) for the readmes idea
 
 - [CSS Print](https://github.com/gradywoodruff/cheatsheet/blob/master/css-print.md)
@@ -10,7 +11,6 @@ Tracking and taking notes on things I am learning and then making cheatsheets so
 - [HQ GIF](https://github.com/gradywoodruff/cheatsheet/blob/master/hq_gif.md)
 - [Markdown](https://github.com/gradywoodruff/cheatsheet/blob/master/markdown.md)
 - [Postgres](https://github.com/gradywoodruff/cheatsheet/blob/master/postgres.md)
-- [pyenv](https://github.com/gradywoodruff/cheatsheet/blob/master/pyenv.md)
 - [Python](https://github.com/gradywoodruff/cheatsheet/blob/master/python.md)
 - [Rails](https://github.com/gradywoodruff/cheatsheet/blob/master/rails.md)
 - [Regex](https://github.com/gradywoodruff/cheatsheet/blob/master/regex.md)
