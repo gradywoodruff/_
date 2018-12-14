@@ -18,3 +18,8 @@
     $ psql mydb
     psql (9.0.1)
     Type "help" for help.
+
+On error, first update:
+
+    brew update
+    brew upgrade
