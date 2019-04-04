@@ -2,23 +2,6 @@
 
 ## Virtual environment
 
-### Commands
-
-    pyenv versions
-    pyenv version
-
-### Create New Environment
-
-    pyenv virtualenv #{env name}
-
-### Create new pipenv Environment
-
-    pyenv install 3.6.5
-    pyenv shell 3.6.5
-    pip install pipenv
-    cd /project_path
-    pipenv --python 3.6.5
-
 ### Set up pyenv and pipenv
 
 To set up a new python environment, first choose
@@ -40,6 +23,23 @@ then pipenv:
 
 The environment will now run with that python version
 and use pip in the folder's virtual environment
+
+### Commands
+
+    pyenv versions
+    pyenv version
+
+### Create New Environment
+
+    pyenv virtualenv #{env name}
+
+### Create new pipenv Environment
+
+    pyenv install 3.6.5
+    pyenv shell 3.6.5
+    pip install pipenv
+    cd /project_path
+    pipenv --python 3.6.5
 
 ## Testing Email Energy
 
