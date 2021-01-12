@@ -41,6 +41,13 @@ and use pip in the folder's virtual environment
     cd /project_path
     pipenv --python 3.6.5
 
-## Testing Email Energy
+### Testing Email Energy
 
     python -m smtpd -n -c DebuggingServer localhost:1025
+    
+    
+### Find Error Class
+    try:
+      something...
+    except:
+      print(sys.exc_info()[0])
