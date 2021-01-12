@@ -9,6 +9,7 @@ Tracking and taking notes on things I am learning and then making cheatsheets so
 - [FFMPEG](https://github.com/gradywoodruff/cheatsheet/blob/master/ffmpeg.md)
 - [Git](https://github.com/gradywoodruff/cheatsheet/blob/master/git.md)
 - [HQ GIF](https://github.com/gradywoodruff/cheatsheet/blob/master/hq_gif.md)
+- [localhost](https://github.com/gradywoodruff/cheatsheet/blob/master/localhost.md)
 - [Markdown](https://github.com/gradywoodruff/cheatsheet/blob/master/markdown.md)
 - [Postgres](https://github.com/gradywoodruff/cheatsheet/blob/master/postgres.md)
 - [Python](https://github.com/gradywoodruff/cheatsheet/blob/master/python.md)
