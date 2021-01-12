@@ -51,3 +51,12 @@ and use pip in the folder's virtual environment
       something...
     except:
       print(sys.exc_info()[0])
+      
+      
+### Call method with string variable
+Assuming module foo with method bar:
+
+    import foo
+    str_var = 'bar'
+    method_to_call = getattr(foo, str_var)
+    result = method_to_call()
