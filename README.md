@@ -4,6 +4,7 @@
 
 Tracking and taking notes on things I am learning and then making cheatsheets so I can outsource some of my memory. Shoutout [@jeffrafter](https://github.com/jeffrafter/howto) for the readmes idea
 
+- [AppleScript](https://github.com/gradywoodruff/cheatsheet/blob/master/applescript.md)
 - [CSS Print](https://github.com/gradywoodruff/cheatsheet/blob/master/css-print.md)
 - [Django](https://github.com/gradywoodruff/cheatsheet/blob/master/django.md)
 - [FFMPEG](https://github.com/gradywoodruff/cheatsheet/blob/master/ffmpeg.md)
