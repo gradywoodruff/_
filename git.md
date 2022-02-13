@@ -37,6 +37,16 @@ And then to delete the branch
 
 (`-d` will work if the commits are up-to-date. If not you have to use `-D` to force the delete)
 
+### Multiple Accounts
+git init
+git config user.name altuser
+git config user.email "altemail"
+git add .
+git commit -m "init"
+git branch -M main
+git remote add origin github.com-altuser:altuser/altrepo.git
+git push -u origin main
+
 ### Mistakes
 If I have to force a push
 
