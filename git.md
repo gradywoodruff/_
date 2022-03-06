@@ -47,6 +47,16 @@ And then to delete the branch
 	git remote add origin github.com-altuser:altuser/altrepo.git
 	git push -u origin main
 
+	git init
+	git config user.name altuser
+	git config user.email "altemail"
+	git add .
+	git commit -m "init"
+	git branch -M main
+	git remote add origin https://github.com/githubuser/altrepo.git
+	git remote set-url origin github.com-altuser:githubuser/altrepo.git
+	git push -u origin main
+
 ### Mistakes
 If I have to force a push
 
